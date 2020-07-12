@@ -9,7 +9,7 @@
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav  ml-auto">
 		      <li class="nav-item ">
-		        <a class="nav-link" href="#home" v-smooth-scroll="{ duration: 1000, offset: -50, updateHistory: false }">Home</a>
+		        <a class="nav-link" href="#home" v-smooth-scroll="{ duration: 1000, offset: -50, updateHistory: false }"><font-awesome-icon icon="home"/> Home</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#habilidades" v-smooth-scroll="{ duration: 1000, offset: -50, updateHistory: false }">habilidades</a>
@@ -22,6 +22,9 @@
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#contacto" v-smooth-scroll="{ duration: 1000, offset: -50, updateHistory: false }">Contacto</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://www.linkedin.com/in/luis-briceño-1b0a541a7" target="_blank"><img src="../../../public/image/linkedin-brands.svg" alt="logo de linkedin" width="20px" class="mr-2">Linkedin</a>
 		      </li>
 		    </ul>
 		  </div>
