@@ -34,16 +34,11 @@ Vue.component('proyecto-2', require('./components/Proyecto-2.vue').default);
 //BOOTSTRAP VUE 
 
 import Vue from 'vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
 import VueScrollReveal from 'vue-scroll-reveal';
 import vueSmoothScroll from 'vue2-smooth-scroll'
 
 import VueLazyload from 'vue-lazyload'
-
-// Install BootstrapVue
-Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin)
 
 Vue.use(VueScrollReveal);
 
@@ -59,8 +54,6 @@ Vue.use(VueLazyload, {
   lazyComponent: true
 })
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 const app = new Vue({
     el: '#app',
