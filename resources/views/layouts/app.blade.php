@@ -25,7 +25,7 @@
         
        <!-- <script src="{{ secure_asset('js/min.app.js') }}" defer></script>-->
 
-       <!-- <link href="{{ secure_asset('css/min.app.css') }}" rel="stylesheet">-->
+       <!--<link href="{{ secure_asset('css/min.app.css') }}" rel="stylesheet">-->
         
         <style type="text/css">
             html, body{
