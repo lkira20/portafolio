@@ -7,7 +7,7 @@
 			<div class="card" id="carta-1">
 			  <div class="row no-gutters">
 			  	<div class="col-md-6">
-			    	<img src="../../../public/image/cne_inicio.png" class="img-fluid" alt="">
+			    	<img v-lazy="imgUrl1" class="img-fluid" alt="">
 			    </div>
 			    <div class="col-md-6">
 			      <div class="card-body">
@@ -35,7 +35,7 @@
 			      </div>
 			    </div>
 			    <div class="col-md-6">
-			    	<img src="../../../public/image/proyecto-1.png" class="img-fluid" alt="">
+			    	<img v-lazy="imgUrl2" class="img-fluid" alt="">
 			    </div>
 			  </div>
 			</div>
@@ -43,7 +43,7 @@
 			<div class="card" id="carta-1" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}">
 			  <div class="row no-gutters">
 			  	<div class="col-md-6">
-			    	<img src="../../../public/image/minimalista.png" class="img-fluid" alt="">
+			    	<img v-lazy="imgUrl3" class="img-fluid" alt="">
 			    </div>
 			    <div class="col-md-6">
 			      <div class="card-body">
@@ -68,7 +68,7 @@
 			      </div>
 			    </div>
 			    <div class="col-md-6">
-			    	<img src="../../../public/image/ventas.png" class="img-fluid" alt="">
+			    	<img v-lazy="imgUrl4" class="img-fluid" alt="">
 			    </div>
 			  </div>
 			</div>
@@ -77,8 +77,21 @@
 </template>
 
 <script>
+	import imagen1 from "../../../public/image/cne_inicio.png"
+	import imagen2 from "../../../public/image/proyecto-1.png"
+	import imagen3 from "../../../public/image/minimalista.png"
+	import imagen4 from "../../../public/image/ventas.png"
 	export default{
+		data(){
+			return{
+				imgUrl1: imagen1,
+				imgUrl2: imagen2,
+				imgUrl3: imagen3,
+				imgUrl4: imagen4,
 
+			}
+		}
+		
 	}
 </script>
 

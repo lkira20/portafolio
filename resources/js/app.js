@@ -38,6 +38,8 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import VueScrollReveal from 'vue-scroll-reveal';
 import vueSmoothScroll from 'vue2-smooth-scroll'
 
+import VueLazyload from 'vue-lazyload'
+
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -46,6 +48,16 @@ Vue.use(IconsPlugin)
 Vue.use(VueScrollReveal);
 
 Vue.use(vueSmoothScroll)
+
+Vue.use(VueLazyload)
+
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: '../../public/image/error.png',
+  loading: '../../public/image/loading.gif',
+  attempt: 1,
+  lazyComponent: true
+})
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'

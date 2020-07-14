@@ -1,7 +1,7 @@
 <template>
 	<div id="home" class="bg-light">
 
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="barra" v-scroll-reveal.reset="{duration: 2000, origin: 'button'}">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="barra" v-scroll-reveal.reset="{duration: 2000, origin: 'bottom'}">
 		  <a class="navbar-brand" href="#home" v-smooth-scroll="{ duration: 1000, offset: -50, updateHistory: false }">Luis Briceño</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -30,12 +30,18 @@
 		  </div>
 		</nav>
 
-		<Descripcion v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}"></Descripcion>
-		<Habilidades v-scroll-reveal.reset="{duration: 2000, origin: 'right', distance: '300px'}"></Habilidades>
-		<Datos v-scroll-reveal.reset="{duration: 2000, origin: 'left', distance: '300px', viewFactor: 0.2}"></Datos>
-		<Proyectos v-scroll-reveal.reset="{duration: 2000, origin: 'right', distance: '300px'}"/>
-		<Contacto v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}"/>
+		<Descripcion ></Descripcion>
+	
+		<Habilidades v-scroll-reveal.reset="{duration: 2000, origin: 'bottom'}"></Habilidades>
+	
+		<Datos v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '150px'}"></Datos>
+		
+		<Proyectos v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}"/>
+		
+		<Contacto id="formulario1" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '150px'}"/>
 
+		<Contacto id="formulario2"/>
+	
 		<footer id="pie" class="text-white py-3 text-center">
 			Luis Briceño. Todos los derechos reservados
 		</footer>
@@ -43,19 +49,24 @@
 </template>
 
 <script>
+		/*
 	import Descripcion from './Descripcion.vue'
 	import Datos from './Datos.vue'
 	import Habilidades from './Habilidades.vue'
 	import Proyectos from './Proyectos'
 	import Contacto from './Contacto'
+	*/
+	function lazyLoad(view){
+	  return() => import(`./${view}.vue`)
+	}
 
 	export default{
 		components:{
-			Descripcion,
-			Datos,
-			Habilidades,
-			Proyectos,
-			Contacto
+			Descripcion: lazyLoad("Descripcion"),
+			Datos: lazyLoad("Datos"),
+			Habilidades: lazyLoad("Habilidades"),
+			Proyectos: lazyLoad("Proyectos"),
+			Contacto: lazyLoad("Contacto")
 		}
 	}
 </script>
@@ -71,5 +82,19 @@
 
 	#pie{
 		background-color: rgb(29, 53, 87);
+	}
+
+	@media (max-width: 768px){
+		#formulario1{
+			display: none;
+			background-color: rgb(230, 57, 70);
+		}
+	}
+
+	@media (min-width: 768px){
+		#formulario2{
+			display: none;
+			background-color: rgb(230, 57, 70);
+		}
 	}
 </style>
