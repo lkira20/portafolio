@@ -26,22 +26,25 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="https://www.linkedin.com/in/luis-briceño-1b0a541a7" target="_blank"><img src="../../../public/image/linkedin-brands.svg" alt="logo de linkedin" width="20px" class="mr-2">Linkedin</a>
 		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://github.com/lkira20" target="_blank"><img src="../../../public/image/github-brands.svg" alt="logo de linkedin" width="20px" class="mr-2">Github</a>
+		      </li>
 		    </ul>
 		  </div>
 		</nav>
 
 		<Descripcion ></Descripcion>
 	
-		<Habilidades v-scroll-reveal.reset="{duration: 2000, origin: 'bottom'}"></Habilidades>
+		<Habilidades></Habilidades>
 	
-		<Datos v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '150px'}"></Datos>
+		<Datos ></Datos>
 		
-		<Proyectos v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}"/>
+		<Proyectos />
 		
-		<Contacto id="formulario1" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '150px'}"/>
+		<Contacto id="contacto"/>
+		
+		<scrollTopArrow/>
 
-		<Contacto id="formulario2"/>
-	
 		<footer id="pie" class="text-white py-3 text-center">
 			Luis Briceño. Todos los derechos reservados
 		</footer>
@@ -66,7 +69,8 @@
 			Datos: lazyLoad("Datos"),
 			Habilidades: lazyLoad("Habilidades"),
 			Proyectos: lazyLoad("Proyectos"),
-			Contacto: lazyLoad("Contacto")
+			Contacto: lazyLoad("Contacto"),
+			scrollTopArrow: lazyLoad("ScrollTopArrow")
 		}
 	}
 </script>
@@ -74,6 +78,7 @@
 <style scoped>
 	#home{
 		height: 100%;
+		
 	}
 
 	#barra{

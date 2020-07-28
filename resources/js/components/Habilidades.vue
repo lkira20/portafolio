@@ -1,7 +1,7 @@
 <template>
 	<div class="" id="habilidades">
 		<h3 class="text-center display-4">Habilidades</h3>
-		<table class="container table table-hover shadow" id="tabla-habi">
+		<table class="container table table-hover shadow" id="tabla-habi" v-scroll-reveal.reset="{duration: 2000, origin: 'bottom'}">
 			<thead>
 				<tr>
 					<th>Herramienta</th>

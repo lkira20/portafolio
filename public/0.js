@@ -17,6 +17,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_image_minimalista_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_image_minimalista_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _public_image_ventas_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../public/image/ventas.png */ "./public/image/ventas.png");
 /* harmony import */ var _public_image_ventas_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_image_ventas_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _public_image_landing_page_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../public/image/landing-page.png */ "./public/image/landing-page.png");
+/* harmony import */ var _public_image_landing_page_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_image_landing_page_png__WEBPACK_IMPORTED_MODULE_4__);
 //
 //
 //
@@ -95,6 +97,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -105,7 +126,8 @@ __webpack_require__.r(__webpack_exports__);
       imgUrl1: _public_image_cne_inicio_png__WEBPACK_IMPORTED_MODULE_0___default.a,
       imgUrl2: _public_image_proyecto_1_png__WEBPACK_IMPORTED_MODULE_1___default.a,
       imgUrl3: _public_image_minimalista_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-      imgUrl4: _public_image_ventas_png__WEBPACK_IMPORTED_MODULE_3___default.a
+      imgUrl4: _public_image_ventas_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+      imgUrl5: _public_image_landing_page_png__WEBPACK_IMPORTED_MODULE_4___default.a
     };
   }
 });
@@ -182,27 +204,6 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { attrs: { id: "cartas" } }, [
-      _c("div", { staticClass: "card", attrs: { id: "carta-1" } }, [
-        _c("div", { staticClass: "row no-gutters" }, [
-          _c("div", { staticClass: "col-md-6" }, [
-            _c("img", {
-              directives: [
-                {
-                  name: "lazy",
-                  rawName: "v-lazy",
-                  value: _vm.imgUrl1,
-                  expression: "imgUrl1"
-                }
-              ],
-              staticClass: "img-fluid",
-              attrs: { alt: "" }
-            })
-          ]),
-          _vm._v(" "),
-          _vm._m(0)
-        ])
-      ]),
-      _vm._v(" "),
       _c(
         "div",
         {
@@ -210,45 +211,8 @@ var render = function() {
             {
               name: "scroll-reveal",
               rawName: "v-scroll-reveal.reset",
-              value: { duration: 2000, origin: "top", distance: "300px" },
-              expression: "{duration: 2000, origin: 'top', distance: '300px'}",
-              modifiers: { reset: true }
-            }
-          ],
-          staticClass: "card",
-          attrs: { id: "carta-2" }
-        },
-        [
-          _c("div", { staticClass: "row no-gutters" }, [
-            _vm._m(1),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("img", {
-                directives: [
-                  {
-                    name: "lazy",
-                    rawName: "v-lazy",
-                    value: _vm.imgUrl2,
-                    expression: "imgUrl2"
-                  }
-                ],
-                staticClass: "img-fluid",
-                attrs: { alt: "" }
-              })
-            ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "scroll-reveal",
-              rawName: "v-scroll-reveal.reset",
-              value: { duration: 2000, origin: "top", distance: "300px" },
-              expression: "{duration: 2000, origin: 'top', distance: '300px'}",
+              value: { duration: 2000, origin: "top", distance: "150px" },
+              expression: "{duration: 2000, origin: 'top', distance: '150px'}",
               modifiers: { reset: true }
             }
           ],
@@ -263,8 +227,8 @@ var render = function() {
                   {
                     name: "lazy",
                     rawName: "v-lazy",
-                    value: _vm.imgUrl3,
-                    expression: "imgUrl3"
+                    value: _vm.imgUrl1,
+                    expression: "imgUrl1"
                   }
                 ],
                 staticClass: "img-fluid",
@@ -272,47 +236,94 @@ var render = function() {
               })
             ]),
             _vm._v(" "),
-            _vm._m(2)
+            _vm._m(0)
           ])
         ]
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "scroll-reveal",
-              rawName: "v-scroll-reveal.reset",
-              value: { duration: 2000, origin: "top", distance: "300px" },
-              expression: "{duration: 2000, origin: 'top', distance: '300px'}",
-              modifiers: { reset: true }
-            }
-          ],
-          staticClass: "card",
-          attrs: { id: "carta-2" }
-        },
-        [
-          _c("div", { staticClass: "row no-gutters" }, [
-            _vm._m(3),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("img", {
-                directives: [
-                  {
-                    name: "lazy",
-                    rawName: "v-lazy",
-                    value: _vm.imgUrl4,
-                    expression: "imgUrl4"
-                  }
-                ],
-                staticClass: "img-fluid",
-                attrs: { alt: "" }
-              })
-            ])
+      _c("div", { staticClass: "card", attrs: { id: "carta-2" } }, [
+        _c("div", { staticClass: "row no-gutters" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c("img", {
+              directives: [
+                {
+                  name: "lazy",
+                  rawName: "v-lazy",
+                  value: _vm.imgUrl2,
+                  expression: "imgUrl2"
+                }
+              ],
+              staticClass: "img-fluid",
+              attrs: { alt: "" }
+            })
           ])
-        ]
-      )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card", attrs: { id: "carta-1" } }, [
+        _c("div", { staticClass: "row no-gutters" }, [
+          _c("div", { staticClass: "col-md-6" }, [
+            _c("img", {
+              directives: [
+                {
+                  name: "lazy",
+                  rawName: "v-lazy",
+                  value: _vm.imgUrl3,
+                  expression: "imgUrl3"
+                }
+              ],
+              staticClass: "img-fluid",
+              attrs: { alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _vm._m(2)
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card", attrs: { id: "carta-2" } }, [
+        _c("div", { staticClass: "row no-gutters" }, [
+          _vm._m(3),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c("img", {
+              directives: [
+                {
+                  name: "lazy",
+                  rawName: "v-lazy",
+                  value: _vm.imgUrl4,
+                  expression: "imgUrl4"
+                }
+              ],
+              staticClass: "img-fluid",
+              attrs: { alt: "" }
+            })
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card", attrs: { id: "carta-1" } }, [
+        _c("div", { staticClass: "row no-gutters" }, [
+          _c("div", { staticClass: "col-md-6" }, [
+            _c("img", {
+              directives: [
+                {
+                  name: "lazy",
+                  rawName: "v-lazy",
+                  value: _vm.imgUrl5,
+                  expression: "imgUrl5"
+                }
+              ],
+              staticClass: "img-fluid",
+              attrs: { alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _vm._m(4)
+        ])
+      ])
     ])
   ])
 }
@@ -438,6 +449,37 @@ var staticRenderFns = [
         )
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c("h5", { staticClass: "card-title" }, [_vm._v("Landing page")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "card-text" }, [
+          _vm._v(
+            "Una una landing page es de mucha ayuda a la hora de hacer que tus clientes hagan una accion en especifico en tu sitio, ya sea para recolectar sus datos para fidelizarlos a tu comunidad y tu a cambio le suministras informacion que le sera de ayuda ya sea redireccionandolo o mandandosela por el correo."
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Esta landing page sumistra informacion sobre los tipos de tiendas virtuales que hay y asi poder informar al cliente, de igual modo esta pagina hace un test para recomendarle el tipo de tienda virtual que necesita el cliente."
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-primary text-white",
+            attrs: { href: "/proyecto-2", target: "_blank" }
+          },
+          [_vm._v("Ir a verlo")]
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -454,6 +496,17 @@ render._withStripped = true
 /***/ (function(module, exports) {
 
 module.exports = "/images/cne_inicio.png?e5c52dbc6f0410dd0e63a13edbe1ec35";
+
+/***/ }),
+
+/***/ "./public/image/landing-page.png":
+/*!***************************************!*\
+  !*** ./public/image/landing-page.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/landing-page.png?446923c1b8ef5ecb5bdf2dcb0ce2e5cb";
 
 /***/ }),
 

@@ -1,7 +1,7 @@
 <template>
 	<div id="Estudios">
 		<h2 class="text-center text-light display-4">Estudios</h2>
-		<table class="container table" id="tabla">
+		<table class="container table" id="tabla" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '150px'}">
 			<tbody>
 				<tr>
 					<th>Bachillerato</th>

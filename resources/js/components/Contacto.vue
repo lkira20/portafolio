@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="" id="subcaja">
-		<div class="container">
+		<div class="container" >
 		    <p class="text-white display-4 text-center" v-if="mensaje == true">Mensaje enviado exitosamente</p>
 		    <p class="text-white display-4 text-center" v-if="error == true">Error al enviar intente mas tarde</p>
 		    

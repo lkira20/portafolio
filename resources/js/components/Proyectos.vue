@@ -1,10 +1,10 @@
 <template>
-	<div id="proyectos">
+	<div id="proyectos" >
 		<h2 class="text-center display-4">Mis proyectos</h2>
 		
 		<div id="cartas">
 
-			<div class="card" id="carta-1">
+			<div class="card" id="carta-1" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '150px'}">
 			  <div class="row no-gutters">
 			  	<div class="col-md-6">
 			    	<img v-lazy="imgUrl1" class="img-fluid" alt="">
@@ -24,7 +24,7 @@
 			  </div>
 			</div>
 
-			<div class="card" id="carta-2" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}">
+			<div class="card" id="carta-2">
 			  <div class="row no-gutters">
 			    <div class="col-md-6">
 			      <div class="card-body text-white">
@@ -40,7 +40,7 @@
 			  </div>
 			</div>
 			
-			<div class="card" id="carta-1" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}">
+			<div class="card" id="carta-1">
 			  <div class="row no-gutters">
 			  	<div class="col-md-6">
 			    	<img v-lazy="imgUrl3" class="img-fluid" alt="">
@@ -57,7 +57,7 @@
 			  </div>
 			</div>
 
-			<div class="card" id="carta-2" v-scroll-reveal.reset="{duration: 2000, origin: 'top', distance: '300px'}">
+			<div class="card" id="carta-2">
 			  <div class="row no-gutters">
 			    <div class="col-md-6">
 			      <div class="card-body text-white">
@@ -72,6 +72,24 @@
 			    </div>
 			  </div>
 			</div>
+
+			<div class="card" id="carta-1">
+			  <div class="row no-gutters">
+			  	<div class="col-md-6">
+			    	<img v-lazy="imgUrl5" class="img-fluid" alt="">
+			    </div>
+			    <div class="col-md-6">
+			      <div class="card-body">
+			        <h5 class="card-title">Landing page</h5>
+			        <p class="card-text">Una una landing page es de mucha ayuda a la hora de hacer que tus clientes hagan una accion en especifico en tu sitio, ya sea para recolectar sus datos para fidelizarlos a tu comunidad y tu a cambio le suministras informacion que le sera de ayuda ya sea redireccionandolo o mandandosela por el correo.</p>
+					
+					<p>Esta landing page sumistra informacion sobre los tipos de tiendas virtuales que hay y asi poder informar al cliente, de igual modo esta pagina hace un test para recomendarle el tipo de tienda virtual que necesita el cliente.</p>
+					<a class="btn btn-primary text-white" href="/proyecto-2" target="_blank">Ir a verlo</a>
+			      </div>
+			    </div>
+			    
+			  </div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -81,6 +99,7 @@
 	import imagen2 from "../../../public/image/proyecto-1.png"
 	import imagen3 from "../../../public/image/minimalista.png"
 	import imagen4 from "../../../public/image/ventas.png"
+	import imagen5 from "../../../public/image/landing-page.png"
 	export default{
 		data(){
 			return{
@@ -88,6 +107,7 @@
 				imgUrl2: imagen2,
 				imgUrl3: imagen3,
 				imgUrl4: imagen4,
+				imgUrl5: imagen5
 
 			}
 		}

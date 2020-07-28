@@ -96,43 +96,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { attrs: { id: "Estudios" } }, [
+    _c("h2", { staticClass: "text-center text-light display-4" }, [
+      _vm._v("Estudios")
+    ]),
+    _vm._v(" "),
+    _c(
+      "table",
+      {
+        directives: [
+          {
+            name: "scroll-reveal",
+            rawName: "v-scroll-reveal.reset",
+            value: { duration: 2000, origin: "top", distance: "150px" },
+            expression: "{duration: 2000, origin: 'top', distance: '150px'}",
+            modifiers: { reset: true }
+          }
+        ],
+        staticClass: "container table",
+        attrs: { id: "tabla" }
+      },
+      [_vm._m(0)]
+    ),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "Estudios" } }, [
-      _c("h2", { staticClass: "text-center text-light display-4" }, [
-        _vm._v("Estudios")
-      ]),
-      _vm._v(" "),
-      _c("table", { staticClass: "container table", attrs: { id: "tabla" } }, [
-        _c("tbody", [
-          _c("tr", [
-            _c("th", [_vm._v("Bachillerato")]),
-            _vm._v(" "),
-            _c("td", [
-              _vm._v(
-                "Escuela Tecnica Privada Maracay 2010-2015 (Tecnico Medio Mencion Informatica)"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tr", [
-            _c("th", [_vm._v("Universidad")]),
-            _vm._v(" "),
-            _c("td", [
-              _vm._v(
-                "Universidad Nacional Experimental Romulo Gallegos 2015-2020 (Ingenieria en Sistemas)"
-              )
-            ])
-          ])
+    return _c("tbody", [
+      _c("tr", [
+        _c("th", [_vm._v("Bachillerato")]),
+        _vm._v(" "),
+        _c("td", [
+          _vm._v(
+            "Escuela Tecnica Privada Maracay 2010-2015 (Tecnico Medio Mencion Informatica)"
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("br")
+      _c("tr", [
+        _c("th", [_vm._v("Universidad")]),
+        _vm._v(" "),
+        _c("td", [
+          _vm._v(
+            "Universidad Nacional Experimental Romulo Gallegos 2015-2020 (Ingenieria en Sistemas)"
+          )
+        ])
+      ])
     ])
   }
 ]

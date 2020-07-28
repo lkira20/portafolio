@@ -197,218 +197,227 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { attrs: { id: "habilidades" } }, [
+    _c("h3", { staticClass: "text-center display-4" }, [_vm._v("Habilidades")]),
+    _vm._v(" "),
+    _c(
+      "table",
+      {
+        directives: [
+          {
+            name: "scroll-reveal",
+            rawName: "v-scroll-reveal.reset",
+            value: { duration: 2000, origin: "bottom" },
+            expression: "{duration: 2000, origin: 'bottom'}",
+            modifiers: { reset: true }
+          }
+        ],
+        staticClass: "container table table-hover shadow",
+        attrs: { id: "tabla-habi" }
+      },
+      [_vm._m(0), _vm._v(" "), _vm._m(1)]
+    ),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "habilidades" } }, [
-      _c("h3", { staticClass: "text-center display-4" }, [
-        _vm._v("Habilidades")
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Herramienta")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Básico")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Medio")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "d-none d-sm-none d-md-block" }, [
+          _vm._v("Avanzado")
+        ]),
+        _vm._v(" "),
+        _c("th", { staticClass: "d-md-none" }, [_vm._v("Avan")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "d-none d-sm-none d-md-block" }, [
+          _vm._v("Experto")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tbody", [
+      _c("tr", [
+        _c("th", [_vm._v("HTML")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
       ]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "container table table-hover shadow",
-          attrs: { id: "tabla-habi" }
-        },
-        [
-          _c("thead", [
-            _c("tr", [
-              _c("th", [_vm._v("Herramienta")]),
-              _vm._v(" "),
-              _c("th", [_vm._v("Básico")]),
-              _vm._v(" "),
-              _c("th", [_vm._v("Medio")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "d-none d-sm-none d-md-block" }, [
-                _vm._v("Avanzado")
-              ]),
-              _vm._v(" "),
-              _c("th", { staticClass: "d-md-none" }, [_vm._v("Avan")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "d-none d-sm-none d-md-block" }, [
-                _vm._v("Experto")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tbody", [
-            _c("tr", [
-              _c("th", [_vm._v("HTML")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("CSS")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("JAVASCRIPT")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("PHP")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("LARAVEL")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("VUE")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("REACT")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("SASS")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("BOOTSTRAP")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("BOOTSTRAP-VUE")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("GIT")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("JQUERY")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("SEO")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("th", [_vm._v("CHART.JS")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "td" }),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", { staticClass: "d-none d-sm-none d-md-block" })
-            ])
-          ])
-        ]
-      ),
+      _c("tr", [
+        _c("th", [_vm._v("CSS")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
       _vm._v(" "),
-      _c("br")
+      _c("tr", [
+        _c("th", [_vm._v("JAVASCRIPT")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("PHP")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("LARAVEL")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("VUE")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("REACT")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("SASS")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("BOOTSTRAP")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("BOOTSTRAP-VUE")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("GIT")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("JQUERY")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("SEO")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ]),
+      _vm._v(" "),
+      _c("tr", [
+        _c("th", [_vm._v("CHART.JS")]),
+        _vm._v(" "),
+        _c("td", { staticClass: "td" }),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td"),
+        _vm._v(" "),
+        _c("td", { staticClass: "d-none d-sm-none d-md-block" })
+      ])
     ])
   }
 ]
